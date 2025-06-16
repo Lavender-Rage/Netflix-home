@@ -1,3 +1,7 @@
 html {
     background-image: url("./images/background\ image.png");
+    background-color:black;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: absolute;
 }
