@@ -1,7 +1,39 @@
 html {
-    background-image: url("./images/background\ image.png");
-    background-color:black;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: absolute;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: absolute;
+}
+
+ header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.logo {
+  color: red;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  padding-left: 100px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.netflix-button {
+    background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      font-size: 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+.netflix-button:hover {
+    background-color: #f6121d;
+    }
 }
