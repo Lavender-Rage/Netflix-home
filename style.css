@@ -36,4 +36,11 @@ html {
 .netflix-button:hover {
     background-color: #f6121d;
     }
-}
+
+  .tagline {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+
+  }
