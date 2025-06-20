@@ -20,6 +20,9 @@ html {
   padding-left: 100px;
   font-weight: bold;
   text-decoration: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
+
 }
 
 .netflix-button {
@@ -27,13 +30,35 @@ html {
       color: white;
       border: none;
       padding: 8px 18px;
+      margin-right: 100px;
       font-size: 15px;
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      margin-top: 0%;
+
 }
 
 .netflix-button:hover {
     background-color: #f6121d;
     }
-}
+
+  .tagline {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Netflix sans", sans-serif;
+    font-weight: 900;
+  }
+
+  .start {
+    font-family: "Netflix sans", sans-serif;
+    text-align: center; 
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 10px;
+  }
+
+  .ready {
+
+  }
