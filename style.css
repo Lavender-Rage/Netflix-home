@@ -46,7 +46,7 @@ html {
   .tagline {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     font-family: "Netflix sans", sans-serif;
     font-weight: 900;
   }
@@ -62,4 +62,16 @@ html {
   .ready {
 
   }
-
+  .ad{
+    font-family: "Netflix sans", sans-serif;
+    color:white;
+    height: 75px;
+    width: 900px;
+    line-height: .2;
+    border-radius: 25px;
+    margin-top: 300px;
+    margin-bottom: 10px;
+    margin-left: 275px;
+    padding: 2px 2px 2px 30px;
+    background: linear-gradient(to right, #6f0e99, #43069e);
+ }
