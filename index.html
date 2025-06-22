@@ -14,19 +14,26 @@
 <link rel="stylesheet" href="./style.css">
 
 <body>
-    <header>
-        <h1 class="logo">NETFLIX</h1>
-        <button class="netflix-button">Sign In</button>
+    <div class="background-image"></div>
+
+    <header class="navbar">
+        <div class="logo">NETFLIX</div>
+        <div class="nav-buttons">
+            <select class="language-selector">
+                <option>English</option>
+                <option>Español</option>
+            </select>
+            <button class="netflix-button">Sign In</button>
+        </div>
     </header>
     <h1 class="tagline">Unlimited movies, TV <br /> shows, and more</h1>
     <h3 class="start">Starts at $7.99. Cancel anytime.</h3>
     <p class="start"> Ready to watch? Enter your email to create or restart your membership. </p>
-    <div>
-        <form style="text-align: center;">
-            <input class="email" type="email" name="e-mail" placeholder="Email Address" />
-            <input class="start-btn" type="submit" value="Get Started  >" />
-        </form>
+    <div class="form-container">
+        <input type="email" placeholder="Email Address" class="email-input">
+        <button class="get-started-btn">Get Started &gt;</button>
     </div>
+
     <div class="ad">
         <p style="font-size: 20px;">The Netflix that you love for just $7.99</p>
         <p>Get our most affordable, ad-supported plan.</p>
@@ -93,7 +100,51 @@
         });
     </script>
 
+    <p class="start"> Ready to watch? Enter your email to create or restart your membership. </p>
+    <div class="form-container">
+        <input type="email" placeholder="Email Address" class="email-input">
+        <button class="get-started-btn">Get Started &gt;</button>
+    </div>
 
+    <div class="footer-container">
+        <h4><a href="tel:1-844-505-2993">Questions? Call 1-844-505-2993</a></h4>
+
+        <div class="footer-grid">
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Account</a>
+            <a href="#">Netflix House</a>
+
+            <a href="#">Media Center</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Netflix Shop</a>
+
+            <a href="#">Redeem Gift Cards</a>
+            <a href="#">Buy Gift Cards</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Terms of Use</a>
+
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+
+            <a href="#">Speed Test</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Only on Netflix</a>
+            <a href="#">Do Not Sell or Share My Personal Information</a>
+
+            <a href="#">Ad Choices</a>
+        </div>
+    </div>
+
+    <select class="language-selector2">
+        <option>English</option>
+        <option>Español</option>
+    </select>
+
+    <p class="capcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more</a></p>
 </body>
 
 </html>

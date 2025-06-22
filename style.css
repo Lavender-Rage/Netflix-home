@@ -4,24 +4,65 @@ html {
   background-size: cover;
   background-position: absolute;
 }
-
+body {
+  margin: 0%;
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  width: 100%;
+
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url("./images/background-img2.jpg"); 
+  background-size: cover;
+  background-position: center;
+
+  z-index: -1;
+  filter: brightness(0.3); /* darken image */
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .logo {
-  color: red;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
-  padding-left: 100px;
-  font-weight: bold;
+  padding-left: 150px;
   text-decoration: none;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  font-size: 60px;
+  font-weight: bold;
+  color: #e50914;
+  font-family: "Bebas Neue", sans-serif;
+}
+.language-selector {
+  padding: 6px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.language-selector2 {
+  padding: 6px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 125px;
+  font-size: 16px;
+  margin-bottom: 50px;
+
 }
 
 .netflix-button {
@@ -30,7 +71,8 @@ header {
   border: none;
   padding: 8px 18px;
   margin-right: 100px;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -56,6 +98,40 @@ header {
   font-weight: lighter;
 }
 
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Center the container itself */
+.form-container {
+  max-width: 800px; /* Optional: limit width */
+  margin: 40px auto 0 auto; /* top auto bottom auto = horizontal center */
+}
+
+.email-input {
+  width: 500px; /* You can adjust this */
+  height: 48px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.get-started-btn {
+  height: 48px;
+  padding: 0 20px;
+  background-color: #e50914;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .ad {
   font-family: "Netflix sans", sans-serif;
   color: white;
@@ -69,29 +145,6 @@ header {
   padding: 2px 2px 2px 30px;
   background: linear-gradient(to right, #6f0e99, #43069e);
 }
-
-.email {
-  height: 50px;
-  width: 400px;
-  text-align: left;
-  opacity: 0.5;
-  border-radius: 4px;
-}
-
-.start-btn {
-  background-color: #e50914;
-  height: 50px;
-  color: white;
-  border: none;
-  font-size: 17px;
-
-  transition: background-color 0.3s ease;
-  border-radius: 4px;
-  font-weight: bold;
-  width: 200px;
-  font-size: 25px;
-}
-
 .faq-container {
   max-width: 950px;
   margin: 0 auto;
@@ -137,4 +190,44 @@ header {
 
 .faq-item.active + .faq-answer {
   display: block;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container a {
+  color: #999;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.footer-container h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px 30px;
+  margin-top: 20px;
+}
+
+.footer-container a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.capcha {
+  color: grey;
+  font-family: "Netflix sans", sans-serif;
+  margin-top: 10px;
+  margin-left: 125px;
+  margin-bottom: 70px;
+  font-weight: lighter;
+  font-size: 14px;
+
 }
